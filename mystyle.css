@@ -1,11 +1,11 @@
-/* SALAH */ 
+/* SALAH
 
 :root {
     --primary: #814E2B;
     --primary-focus: #734424;
 }
 
-/* font */
+/* font 
 .font-poppins {
     font-family: 'Poppins', sans-serif !important;
 }
@@ -14,7 +14,7 @@
     font-family: 'Archivo', sans-serif !important;  
 }
 
-/* component */
+/* component 
 .btn-primary {
     background-color: var(--primary) !important;
     border-color: var(--primary) !important;
@@ -24,7 +24,7 @@
     background-color: var(--primary-focus) !important;
 }
 
-/* navbar */
+/* navbar 
 .active {
     color: var(--primary) !important;
 }
@@ -32,4 +32,15 @@
 .nav-link:hover {
     color: var(--primary) !important;
 }
+    
+<div class="contact-content">
+    <div class="container">
+        <div class="row">
+            <h4 class="fs-4 fw-bold">Hubungi Kami </h3>
+                <h3 class="fs-4 fw-medium">Alamat: Jl. Contoh No. 123, Jakarta, Indonesia  </h3>
+                <h3 class="fs-4 fw-medium">Telepon: +62 123 456 789</h3>  
+                <h3 class="fs-4 fw-medium">Email: info@rentaprodigital.com</h3>
+        </div>
+    </div>
+</div>*/
 

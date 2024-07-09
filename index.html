@@ -40,9 +40,25 @@
             height: auto;
         }
 
+        .navbar-nav .nav-link {
+        position: relative;
+        color: #007bff; /* Warna default tulisan */
+        transition: color 0.3s ease; /* Transisi warna ketika hover */
+        }   
+
+        .navbar-nav .nav-link:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #555555; /* Warna tulisan saat dihover */
+        }
+
+
         .main-content {
             width: 100%;
-            padding: 100px 0;
+            padding: 160px 0;
             top: 50;
             text-align: left;
             background-color: #f8f9fa;
@@ -78,6 +94,15 @@
             margin-bottom: 30px;
         }
 
+        .container-content .box {
+        transition: box-shadow 0.3s ease; /* Transisi efek bayangan */
+        }
+
+        .container-content .box:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.5); /* Bayangan biru saat hover */
+        }
+
+
         .box {
             border: 1px solid #cccccc;
             padding: 20px;
@@ -101,6 +126,7 @@
         .B-content {
             padding: 100px 0;
             background-color: white;
+            border-radius: 2rem;
         }
 
         .B-content h1 {
@@ -140,9 +166,9 @@
 
         .testimonial-item {
             min-width: 250px; /* Atur lebar minimum kotak testimonial */
-            max-width: 350px; /* Atur lebar maksimum kotak testimonial */
+            max-width: 460px; /* Atur lebar maksimum kotak testimonial */
             border: 3px solid rgba(0, 0, 0, 0.2);
-            border-radius: 2rem;
+            border-radius: 8px;
             margin: 0 1rem; /* Atur margin antar kotak testimonial */
             padding: 20px 40px; /* Atur padding dalam kotak testimonial */
             display: flex;
@@ -156,25 +182,8 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .testimonial-box img {
-            width: 15rem;
-            border-radius: 50%;
-            border: 3px solid #555555;
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Adjustments for testimonials */
-        .testimonial-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            background: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .testimonial-item:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.5); /* Bayangan biru saat hover */
         }
 
         .testimonial-item img {
@@ -183,11 +192,6 @@
             object-fit: cover;
             border-radius: 50%;
             margin-bottom: 20px;
-        }
-
-        .testimonial-item p {
-            font-size: 1.1rem;
-            color: #555555;
         }
 
         .socialmedia-content {
@@ -216,7 +220,7 @@
 
         .contact-content {
             padding: 100px 0;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
             background-color: #f8f9fa;
             text-align: left;
             width: 100%; /* membuat konten contact menjadi full width */
@@ -275,7 +279,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#features">Features</a>
@@ -291,6 +295,7 @@
     </div>
 </nav>
 <!-- Navbar end-->
+
 
 <!-- Main content -->
 <div id="home" class="main-content">
@@ -430,13 +435,13 @@
                 <h3 class="fs-4 fw-medium">Ikuti kami di media sosial untuk mendapatkan berita terbaru, pembaruan produk, dan tips 
                     bisnis yang berguna.</h3>
                     <div class="social-icons">
-                <i class='bx bxl-facebook-circle'></i>
-                <i class='bx bxl-twitter'></i>
-                <i class='bx bxl-linkedin' ></i>
+                        <i class='bx bxl-facebook-circle text-primary'></i>
+                        <i class='bx bxl-twitter text-primary'></i>
+                        <i class='bx bxl-linkedin text-primary'></i>
+                    </div>        
                 </div>
+            </div>
         </div>
-    </div>
-</div>
 
 <div id="contact" class="contact-content">
     <div class="container">

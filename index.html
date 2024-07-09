@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentraPro</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/mystyle.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .font-archivo {
+            font-family: 'Archivo', sans-serif;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0; /* Padding di atas dan bawah main content */
+        }
+
+        .container-content {
+            margin-top: 50px; /* Margin untuk menggeser container ke bawah */
+        }
+
+        .features-content {
+            padding: 50px 0;
+            background-color: #f8f9fa; /* Warna latar belakang untuk bagian features */
+        }
+
+        .features-content .row {
+            justify-content: center;
+        }
+
+        .features-content .col-6 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px; /* Margin bawah antar konten */
+        }
+
+        .features-content h1, 
+        .features-content h3, 
+        .features-content p {
+            text-align: left; /* Teks rata kiri */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/icon/logo.png" alt="logo" style="width: 130px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-4 font-poppins" style="transform: translateY(10px);">
+                <li class="nav-item">
+                    <a class="nav-link active fw-medium" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Why Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimoni</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar end-->
+
+<!-- Main content -->
+<div class="main-content">
+    <div class="container font-poppins">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1 class="fs-1 fw-bold">
+                        Selamat Datang di RentaPro 
+                    </h1>
+                    <h3 class="fs-4 fw-medium">
+                        Solusi Manajemen Rental Mobil yang Efisien
+                    </h3>
+                    <p style="color: #555555">
+                        RentaPro adalah platform SaaS yang dirancang khusus untuk mengelola bisnis rental mobil 
+                        Anda dengan lebih efisien dan efektif. Dengan fitur-fitur unggulan kami, Anda dapat 
+                        meningkatkan produktivitas dan profitabilitas bisnis rental mobil Anda.
+                    </p>
+                    <button class="btn btn-primary px-4 py-2">Contact</button>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <img src="./assets/img/mobil.png" alt="mobil" style="max-width: 100%;" width="500px">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="features" class="features-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="./assets/img/mobil2.png" alt="Mobil 2" style="max-width: 100%;" width="500px">
+            </div>
+            <div class="col-6">
+                <div>
+                    <h1 class="fs-1 fw-bold">
+                        Features
+                    </h1>
+                    <h3 class="fs-4 fw-medium">
+                         - Manajemen Armada yang Efisien
+                    </h3>
+                    <p style="color: #555555">
+                        Kelola armada mobil Anda dengan mudah dan efisien, melacak status, perawatan, dan ketersediaan mobil dalam satu platform terintegrasi.
+                    </p>
+                    <h3 class="fs-4 fw-medium">
+                        - Pendataan Transaksi yang Lengkap 
+                   </h3>
+                   <p style="color: #555555">
+                    Catat semua transaksi rental secara rapi dan teratur dengan detail yang akurat untuk memudahkan pelacakan penyewa, waktu sewa, dan informasi transaksi lainnya. 
+                   </p>
+                   <h3 class="fs-4 fw-medium">
+                    - Laporan Keuangan yang Akurat 
+               </h3>
+               <p style="color: #555555">
+                Dapatkan laporan keuangan yang lengkap dan akurat untuk memantau kinerja bisnis Anda, membantu dalam pengambilan keputusan yang lebih baik untuk pertumbuhan bisnis Anda.    
+               </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-content">
+    <div class="row">
+        <div class="col-6">
+            <img src="./assets/img/mobil2.png" alt="Mobil 2" style="max-width: 100%;" width="500px">
+        </div>
+        <div class="col-6 d-flex align-items-center">
+            <div>
+                <h1 class="fs-1 fw-bold font-poppins">
+                    Why Us
+                </h1>
+                <h3 class="fs-4 fw-medium font-poppins">
+                     - Manajemen Armada yang Efisien
+                </h3>
+                <p style="color: #555555">
+                    Kelola armada mobil Anda dengan mudah dan efisien, melacak status, perawatan, dan ketersediaan mobil dalam satu platform terintegrasi.
+                </p>
+                <h3 class="fs-4 fw-medium font-poppins">
+                    - Pendataan Transaksi yang Lengkap 
+               </h3>
+               <p style="color: #555555">
+                Catat semua transaksi rental secara rapi dan teratur dengan detail yang akurat untuk memudahkan pelacakan penyewa, waktu sewa, dan informasi transaksi lainnya. 
+               </p>
+               <h3 class="fs-4 fw-medium font-poppins">
+                - Laporan Keuangan yang Akurat 
+           </h3>
+           <p style="color: #555555">
+            Dapatkan laporan keuangan yang lengkap dan akurat untuk memantau kinerja bisnis Anda, membantu dalam pengambilan keputusan yang lebih baik untuk pertumbuhan bisnis Anda.    
+           </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main content end -->
+
+<!-- Bootstrap JS -->
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -139,24 +139,21 @@
         }
 
         .testimonial-item {
-            .testimonial-item {
-    min-width: 250px; /* Atur lebar minimum kotak testimonial */
-    max-width: 350px; /* Atur lebar maksimum kotak testimonial */
-    border: 3px solid rgba(0, 0, 0, 0.2);
-    border-radius: 2rem;
-    margin: 0 1rem; /* Atur margin antar kotak testimonial */
-    padding: 20px 40px; /* Atur padding dalam kotak testimonial */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1.5rem;
-    color: #555555;
-    transition: 0.4s ease-in-out;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+            min-width: 250px; /* Atur lebar minimum kotak testimonial */
+            max-width: 350px; /* Atur lebar maksimum kotak testimonial */
+            border: 3px solid rgba(0, 0, 0, 0.2);
+            border-radius: 2rem;
+            margin: 0 1rem; /* Atur margin antar kotak testimonial */
+            padding: 20px 40px; /* Atur padding dalam kotak testimonial */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 1.5rem;
+            color: #555555;
+            transition: 0.4s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .testimonial-box img {
@@ -194,42 +191,73 @@
         }
 
         .socialmedia-content {
-    padding: 100px 0;
-    margin-bottom: 30px;
-    background-color: white;
-    text-align: center; /* Center text for the social media content */
-}
+            padding: 100px 0;
+            margin-bottom: 30px;
+            background-color: white;
+            text-align: center; /* Center text for the social media content */
+        }
 
-.socialmedia-content h4, .socialmedia-content h3 {
-    text-align: center;
-    margin-bottom: 10px; /* Additional margin if needed */
-}
+        .socialmedia-content h4, .socialmedia-content h3 {
+            text-align: center;
+            margin-bottom: 10px; /* Additional margin if needed */
+        }
 
-.socialmedia-content .social-icons {
-    text-align: center;
-    margin-top: 20px; /* Add margin top to space out from the text */
-}
+        .socialmedia-content .social-icons {
+            text-align: center;
+            margin-top: 20px; /* Add margin top to space out from the text */
+        }
 
-.socialmedia-content .social-icons i {
-    font-size: 3rem; /* Adjust font size as needed */
-    margin: 0 15px; /* Margin between icons */
-    display: inline-block; /* Ensure icons are inline-block */
-}
+        .socialmedia-content .social-icons i {
+            font-size: 3rem; /* Adjust font size as needed */
+            margin: 0 15px; /* Margin between icons */
+            display: inline-block; /* Ensure icons are inline-block */
+        }
 
 
-        .contact-content{
+        .contact-content {
+            padding: 100px 0;
+            margin-bottom: 50px;
             background-color: #f8f9fa;
             text-align: left;
+            width: 100%; /* membuat konten contact menjadi full width */
         }
-        
 
-        .footer{
+        .contact h4, .contact h3 {
+            text-align: left;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 100px 0;
             background-color: #413d3d;
             color: white;
         }
 
-        .footer h1{
+        .footer h1 {
             text-align: center;
+        }
+
+        .footer ul {
+            margin-top: 0;
+            padding: 0;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .footer ul li a {
+            color: white;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        .footer ul li a:hover {
+            border-bottom: 3px solid var(--main-color);
+        }
+
+        .footer ul li {
+            display: inline-block;
+            padding: 0 15px;
         }
     </style>
 </head>
@@ -401,33 +429,41 @@
             <h4 class="fs-4 fw-bold">Bergabunglah dengan Kami di Media Sosial</h3>
                 <h3 class="fs-4 fw-medium">Ikuti kami di media sosial untuk mendapatkan berita terbaru, pembaruan produk, dan tips 
                     bisnis yang berguna.</h3>
+                    <div class="social-icons">
                 <i class='bx bxl-facebook-circle'></i>
                 <i class='bx bxl-twitter'></i>
                 <i class='bx bxl-linkedin' ></i>
+                </div>
         </div>
     </div>
 </div>
 
 <div id="contact" class="contact-content">
     <div class="container">
+        <h1 class="fs-1 fw-bold text-center">Hubungi Kami</h1>
         <div class="row">
             <div class="col-md-6">
-            <h4 class="fs-4 fw-bold">Hubungi Kami </h4>
-                <h3 class="fs-4 fw-medium">Alamat: Jl. Contoh No. 123, Jakarta, Indonesia  </h3>
-                <h3 class="fs-4 fw-medium">Telepon: +62 123 456 789</h3>  
-                <h3 class="fs-4 fw-medium">Email: info@rentaprodigital.com</h3>
+                <h3>Alamat</h3>
+                <p>Jl. Jendral Sudirman No. 123, Malang, Jawa Timur</p>
+                <h3>Telepon</h3>
+                <p>+62 123 456 789</p>
+                <h3>Email</h3>
+                <p>info@rentrapro.com</p>
             </div>
         </div>
     </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="fs-5 fw-bold">RentaPro - Solusi Manajemen Rental Mobil Anda</h1>
-            </div>
-        </div>
+        <h1 class="fs-2 fw-bold">RentaPro - Solusi Manajemen Rental Mobil Anda</h1>
+        <ul class="list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 </footer>
 <!-- Footer end -->
